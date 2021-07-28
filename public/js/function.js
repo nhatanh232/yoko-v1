@@ -270,17 +270,6 @@ function formatSTT(value, row, index) {
     return index + 1;
 }
 
-function formatStatus(value, row) {
-    switch (value) {
-        case ACTIVE:
-            return '<span class="badge badge-success">Hoạt động</span>';
-        case LOCK:
-            return '<span class="badge badge-danger">Khóa</span>';
-        default:
-            return 'TBD';
-    }
-}
-
 function formatPrice(value, row, index) {
     return Intl.NumberFormat('vi-VN',
         {

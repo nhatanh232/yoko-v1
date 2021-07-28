@@ -10,6 +10,17 @@ function actionColumn(value, row, index) {
     return btn.join(" ");
 }
 
+function formatStatus(value, row) {
+    switch (value) {
+        case ACTIVE:
+            return '<span class="badge badge-success">Hoạt động</span>';
+        case LOCK:
+            return '<span class="badge badge-danger">Khóa</span>';
+        default:
+            return 'TBD';
+    }
+}
+
 $('#frm_add').validate({
     rules: {
         name: {
@@ -52,7 +63,6 @@ function remove(id) {
             _token: csrf
         },
         success: function (data) {
-            console.log(data);
             if (data.status == 0) {
                 swal("Thông báo!", data.msg, "success");
                 $('#demo-custom-toolbar').bootstrapTable('refresh');

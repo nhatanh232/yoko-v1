@@ -39,6 +39,11 @@ Route::group(['middleware' => 'auth', 'prefix' => 'auth'], function () {
         Route::get('/', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
         Route::get('/search', [App\Http\Controllers\ProductController::class, 'search'])->name('product.search');
         Route::get('/create', [App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
+        Route::post('/upload-image', [App\Http\Controllers\ProductController::class, 'uploadImage'])->name('product.upload_image');
+        Route::post('/store', [App\Http\Controllers\ProductController::class, 'store'])->name('product.store');
+        Route::get('/{id}/edit', [App\Http\Controllers\ProductController::class, 'edit'])->name('product.edit');
+        Route::post('/update/{id}', [App\Http\Controllers\ProductController::class, 'update'])->name('product.update');
+        Route::post('/delete/{id}', [App\Http\Controllers\ProductController::class, 'removeProduct'])->name('product.stop_selling');
     });
 });
 

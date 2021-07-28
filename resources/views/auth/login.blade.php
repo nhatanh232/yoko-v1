@@ -3,7 +3,7 @@
     <div id="container" class="cls-container">
         <!-- BACKGROUND IMAGE -->
         <!--===================================================-->
-        <div id="bg-overlay" class="bg-img" style="background-image: url('/nifty/img/bg-img/bg-img-2.jpg');"></div>
+        <div id="bg-overlay" class="bg-img" style="background-image: url('/nifty/img/bg-img/bg-img-7.jpg');"></div>
 
         <div class="cls-content">
             <div class="cls-content-sm panel">
@@ -40,23 +40,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- DEMO PURPOSE ONLY -->
-        <!--===================================================-->
-        <div class="demo-bg">
-            <div id="demo-bg-list">
-                <div class="demo-loading"><i class="psi-repeat-2"></i></div>
-                <img class="demo-chg-bg bg-trans" src="/nifty/img/bg-img/thumbs/bg-trns.jpg" alt="Background Image">
-                <img class="demo-chg-bg" src="/nifty/img/bg-img/thumbs/bg-img-1.jpg" alt="Background Image">
-                <img class="demo-chg-bg active" src="/nifty/img/bg-img/thumbs/bg-img-2.jpg" alt="Background Image">
-                <img class="demo-chg-bg" src="/nifty/img/bg-img/thumbs/bg-img-3.jpg" alt="Background Image">
-                <img class="demo-chg-bg" src="/nifty/img/bg-img/thumbs/bg-img-4.jpg" alt="Background Image">
-                <img class="demo-chg-bg" src="/nifty/img/bg-img/thumbs/bg-img-5.jpg" alt="Background Image">
-                <img class="demo-chg-bg" src="/nifty/img/bg-img/thumbs/bg-img-6.jpg" alt="Background Image">
-                <img class="demo-chg-bg" src="/nifty/img/bg-img/thumbs/bg-img-7.jpg" alt="Background Image">
-            </div>
-        </div>
-        <!--===================================================-->
     </div>
 @endsection
 
