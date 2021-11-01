@@ -19,6 +19,7 @@ Auth::routes(['register' => false]);
 Route::get('/', function(){
     return view('welcome');
 });
+Route::get('/updated-activity', [App\Http\Controllers\TelegramController::class, 'updatedActivity']);
 
 
 //admin board
