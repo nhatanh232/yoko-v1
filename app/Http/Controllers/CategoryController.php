@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 
@@ -141,5 +142,11 @@ class CategoryController extends Controller
             'status' => -1,
             'msg' => 'Xóa danh mục thất bại'
         ]);
+    }
+
+    public function testApi(Request $request){
+        $data = $request->all();
+
+        Log::info(json_encode($data, JSON_PRETTY_PRINT));
     }
 }
