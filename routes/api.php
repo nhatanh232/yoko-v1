@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('testFNS', [\App\Http\Controllers\CategoryController::class, 'testApi']);
+Route::get('testFNS', [\App\Http\Controllers\CategoryController::class, 'callbackAPI']);

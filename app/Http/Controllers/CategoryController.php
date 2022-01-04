@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use Ixudra\Curl\Facades\Curl;
 
 class CategoryController extends Controller
 {
@@ -148,5 +149,15 @@ class CategoryController extends Controller
         $data = $request->all();
 
         Log::info(json_encode($data, JSON_PRETTY_PRINT));
+    }
+
+    public function callbackAPI(Request $request){
+        $data = $request->all();
+
+        Curl::to('https://anhttn232.com/api/testFNS')
+            ->withData($data)
+            ->returnResponseObject()
+            ->asJson(true)
+            ->post();
     }
 }
