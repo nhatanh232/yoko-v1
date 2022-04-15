@@ -47,6 +47,10 @@
     <script src="/shop/js/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Pixel Code for https://thongbao.atpweb.vn/ -->
+    <script async src="https://thongbao.atpweb.vn/pixel/5fnpu3syh9l5nwk8qg8njg9tzwe07kkz"></script>
+    <!-- END Pixel Code -->
+
 </head>
 <body>
 
