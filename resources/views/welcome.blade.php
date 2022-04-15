@@ -48,7 +48,7 @@
     <![endif]-->
 
     <!-- Pixel Code for https://thongbao.atpweb.vn/ -->
-    <script async src="https://thongbao.atpweb.vn/pixel/5fnpu3syh9l5nwk8qg8njg9tzwe07kkz"></script>
+    <script async src="https://thongbao.atpweb.vn/pixel/3o02c3r38ja8mn4zrmnepuid32o7qbwn"></script>
     <!-- END Pixel Code -->
 
 </head>
